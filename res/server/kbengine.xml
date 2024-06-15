@@ -74,7 +74,7 @@
 				<!-- 数据库地址 
 					（Database address)
 				-->
-				<host> localhost </host>										<!-- Type: String -->
+				<host> 127.0.0.1 </host>										<!-- Type: String -->
 				<port> 3306 </port>												<!-- Type: Integer -->
 
 				<!-- 数据库账号验证 
@@ -87,7 +87,7 @@
 					<!-- 为true则表示password是加密(rsa)的, 可防止明文配置 
 						(is true, password is RSA)
 					-->
-					<encrypt> true </encrypt>
+					<encrypt> false </encrypt>
 				</auth>
 
 				<!-- 数据库名称 
