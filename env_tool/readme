@@ -1,0 +1,12 @@
+## 首次运行
+* 确保已经安装了 docker 及 docker-compose
+* 运行 start_env.sh 以启动 mysql 或其他依赖的组件，如果 docker 报错，试下 sudo service docker start
+* 运行 init_mysql.sh 以创建数据库用户及库
+
+## 平常运行
+* 运行 start_env.sh 以启动 mysql 或其他依赖的组件
+* 运行 stop_env.sh 以关闭 mysql 或其他依赖的组件
+
+## 备注
+* docker-compose.yml 描述了服务器依赖的组件，目前包含了 mysql, mysql 使用了 3307 端口，可以修改配置来替换别的端口
+* conn_mysql_by_root.sh 可以用于连接 mysql
